@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A044BE42D71872100DBBB58 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A044BE32D71872100DBBB58 /* PrivacyInfo.xcprivacy */; };
+		3A044BE52D71872100DBBB58 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = 3A044BE32D71872100DBBB58 /* PrivacyInfo.xcprivacy */; };
 		3AED05BD1AD59FD40053CC65 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AED05BC1AD59FD40053CC65 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AED05F21AD5A0470053CC65 /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 3AED05DC1AD5A0470053CC65 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3AED05F31AD5A0470053CC65 /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 3AED05DD1AD5A0470053CC65 /* MASCompositeConstraint.m */; };
@@ -60,6 +62,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A044BE32D71872100DBBB58 /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
 		3AED05B71AD59FD40053CC65 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AED05BB1AD59FD40053CC65 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3AED05BC1AD59FD40053CC65 /* Masonry.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Masonry.h; sourceTree = "<group>"; };
@@ -154,6 +157,7 @@
 				3AED05ED1AD5A0470053CC65 /* NSLayoutConstraint+MASDebugAdditions.h */,
 				3AED05EE1AD5A0470053CC65 /* NSLayoutConstraint+MASDebugAdditions.m */,
 				3AED05BA1AD59FD40053CC65 /* Supporting Files */,
+				3A044BE32D71872100DBBB58 /* PrivacyInfo.xcprivacy */,
 			);
 			path = Masonry;
 			sourceTree = "<group>";
@@ -271,6 +275,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 			);
 			mainGroup = 3AED05AD1AD59FD40053CC65;
@@ -289,6 +294,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A044BE52D71872100DBBB58 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -296,6 +302,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A044BE42D71872100DBBB58 /* PrivacyInfo.xcprivacy in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -454,11 +461,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Masonry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Debug;
 		};
@@ -472,11 +483,15 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = Masonry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Masonry;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "appletvos appletvsimulator iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = YES;
+				TARGETED_DEVICE_FAMILY = "1,2,3";
 			};
 			name = Release;
 		};
@@ -491,6 +506,7 @@
 				INFOPLIST_FILE = Masonry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Masonry;
 				SDKROOT = macosx;
@@ -509,6 +525,7 @@
 				INFOPLIST_FILE = Masonry/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.5;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.cloudling.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = Masonry;
 				SDKROOT = macosx;
